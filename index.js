@@ -3,7 +3,11 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('Hey, I\'m a Node.js app!')
+    res.send('Hey, I\'m a Node.js app! -jkordy')
+})
+
+app.get('/hello', (req, res) => {
+    res.send('Hello, I\'m a Node.js app!')
 })
 
 app.listen(3000, () => {
